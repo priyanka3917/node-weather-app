@@ -8,7 +8,7 @@ const forecast = (latitude,longitude,callback) => {
         callback('unable to connect.Try again later', undefined)
     }
     else {
-        callback(undefined,body.current.weather_descriptions[0] + ' .It is currently ' +body.current.temperature + ' degrees out')
+        callback(undefined,body.current.weather_descriptions[0] + ' .It is currently ' +body.current.temperature + '  degrees out. It feels like  ' + body.current.feelslike + '  degrees out.The humidity is   ' + body.current.humidity + ' %. ')
     }
     
 })
